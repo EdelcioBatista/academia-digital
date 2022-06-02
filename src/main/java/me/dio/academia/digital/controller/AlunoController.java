@@ -18,7 +18,8 @@ public class AlunoController {
   private AlunoServiceImpl service;
 
   @PostMapping
-  public Aluno create(@Valid @RequestBody AlunoForm form) {
+  //public Aluno create(@Valid @RequestBody AlunoForm form) { desabilitado para conseguir usar o postman
+  public Aluno create( @RequestBody AlunoForm form) {
     return service.create(form);
   }
 

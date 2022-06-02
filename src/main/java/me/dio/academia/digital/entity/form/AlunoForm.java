@@ -18,7 +18,7 @@ public class AlunoForm {
   private String nome;
 
   @NotEmpty(message = "Preencha o campo corretamente.")
-  //@CPF(message = "'${validatedValue}' é inválido!")
+  //@CPF(message = "'${validatedValue}' é inválido!") desablitado para poder testar via postman
   private String cpf;
 
   @NotEmpty(message = "Preencha o campo corretamente.")

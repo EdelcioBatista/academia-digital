@@ -10,11 +10,10 @@ import java.util.List;
 @Repository
 public interface AlunoRepository extends JpaRepository<Aluno, Long> {
 
-  /**
-   *
-   * @param dataDeNascimento: data de nascimento dos alunos
-   * @return lista com todos os alunos com a data de nascimento passada como parâmetro da função
-   */
-  List<Aluno> findByDataDeNascimento(LocalDate dataDeNascimento);
+  
+  //@param dataDeNascimento: data de nascimento dos alunos
+  //@return lista com todos os alunos com a data de nascimento passada como parâmetro da função
+   
+  List<Aluno> findByDataDeNascimento(LocalDate dataDeNascimento); //a string "findBy" é fixa, depois complementa com o nome do campo a pesquisar.
 
 }
